@@ -1,3 +1,5 @@
+'use strict'
+
 const convertFhToC = function (fh) {
   return (fh - 32) * 5 / 9
 }

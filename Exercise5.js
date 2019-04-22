@@ -1,6 +1,12 @@
+'use strict'
+
 let student = {
   name: 'Kwezi',
-  studentNumber: 453528
+  studentNumber: 453528,
+
+  getSummary: function () {
+    return `${this.name}'s student number is ${this.studentNumber}`
+  }
 }
 const addAge = function (theStudent, age) {
   theStudent.age = age // add a new property called age to the student
@@ -25,7 +31,7 @@ const determineYear = function (courseCode) {
     console.log(`${courseCode} is in year ${yearOffered}`)
     return yearOffered
   } else {
-    console.log('Error: Not a valid input, course code should take the form XXXX1111')
+    console.log('Error: Not a valid input, course code should take the form XXXX1011')
   }
 }
 addAge(student, 20)
@@ -35,3 +41,4 @@ determineYear('CHMT3011')
 console.log(student) // print the entire object
 // access the object's properties
 console.log(`${student.name}'s student number is ${student.studentNumber}`)
+console.log(student.getSummary())
