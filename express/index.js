@@ -8,4 +8,4 @@ app.use(mainRouter)
 
 let port = process.env.PORT
 app.listen(port)
-console.log('Express server is running on port 3000')
+console.log('Express server is running on port', port)
