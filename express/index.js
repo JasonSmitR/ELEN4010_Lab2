@@ -6,5 +6,6 @@ let app = express()
 
 app.use(mainRouter)
 
-app.listen(80)
+let port = process.env.PORT
+app.listen(port)
 console.log('Express server is running on port 3000')
